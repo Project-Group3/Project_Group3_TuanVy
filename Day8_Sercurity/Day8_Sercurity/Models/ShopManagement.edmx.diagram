@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="e16bdcbb495f474f8e70fb44d3443e1c" Name="Diagram1">
+        <EntityTypeShape EntityType="ShopManagementModel.Category" Width="1.5" PointX="3" PointY="9.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ShopManagementModel.Customer" Width="1.5" PointX="3" PointY="1.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="ShopManagementModel.Employee" Width="1.5" PointX="3" PointY="4.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="ShopManagementModel.Gender" Width="1.5" PointX="0.75" PointY="3.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="ShopManagementModel.Order" Width="1.5" PointX="5.25" PointY="3.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="ShopManagementModel.OrderDetail" Width="1.5" PointX="7.5" PointY="3.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="ShopManagementModel.Product" Width="1.5" PointX="5.25" PointY="9.125" IsExpanded="true" />
+        <AssociationConnector Association="ShopManagementModel.FK_dbo_Products_dbo_Category_Category_Id" ManuallyRouted="false" />
+        <AssociationConnector Association="ShopManagementModel.FK_dbo_Customer_dbo_Gender_Gender_Id" ManuallyRouted="false" />
+        <AssociationConnector Association="ShopManagementModel.FK_dbo_Order_dbo_Customer_Customer_Id" ManuallyRouted="false" />
+        <AssociationConnector Association="ShopManagementModel.FK_dbo_Employees_dbo_Gender_Gender_Id" ManuallyRouted="false" />
+        <AssociationConnector Association="ShopManagementModel.FK_dbo_Order_dbo_Employees_Employee_Id" ManuallyRouted="false" />
+        <AssociationConnector Association="ShopManagementModel.FK_dbo_OrderDetail_dbo_Order_Order_Id" ManuallyRouted="false" />
+        <AssociationConnector Association="ShopManagementModel.FK_dbo_OrderDetail_dbo_Products_Product_Id" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
