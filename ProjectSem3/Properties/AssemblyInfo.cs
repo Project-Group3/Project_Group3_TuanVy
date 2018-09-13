@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("Day8_Sercurity")]
+[assembly: AssemblyTitle("ProjectSem3")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("Day8_Sercurity")]
+[assembly: AssemblyProduct("ProjectSem3")]
 [assembly: AssemblyCopyright("Copyright ©  2018")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("f42ded26-8803-4a25-bc87-c9ab15517047")]
+[assembly: Guid("5ce23c9e-907e-4cea-8cdd-d9fd3bb17708")]
 
 // Version information for an assembly consists of the following four values:
 //

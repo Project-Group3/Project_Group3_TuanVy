@@ -5,9 +5,9 @@ using Microsoft.Owin;
 using Microsoft.Owin.Security.Cookies;
 using Microsoft.Owin.Security.Google;
 using Owin;
-using Day8_Sercurity.Models;
+using ProjectSem3.Models;
 
-namespace Day8_Sercurity
+namespace ProjectSem3
 {
     public partial class Startup
     {
@@ -58,11 +58,11 @@ namespace Day8_Sercurity
             //   appId: "",
             //   appSecret: "");
 
-            app.UseGoogleAuthentication(new GoogleOAuth2AuthenticationOptions()
-            {
-                ClientId = "10034856932-bmh62j3n8fmqe2h4ur5df1d47s6qqvb9.apps.googleusercontent.com",
-                ClientSecret = "Os6YXo1E6f3w3Ke10en96oDG"
-            });
+            //app.UseGoogleAuthentication(new GoogleOAuth2AuthenticationOptions()
+            //{
+            //    ClientId = "",
+            //    ClientSecret = ""
+            //});
         }
     }
 }

@@ -6,9 +6,9 @@ using System.Web.Mvc;
 using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.Owin;
 using Microsoft.Owin.Security;
-using Day8_Sercurity.Models;
+using ProjectSem3.Models;
 
-namespace Day8_Sercurity.Controllers
+namespace ProjectSem3.Controllers
 {
     [Authorize]
     public class ManageController : Controller

@@ -1,7 +1,7 @@
 ﻿using System.Web;
 using System.Web.Optimization;
 
-namespace Day8_Sercurity
+namespace ProjectSem3
 {
     public class BundleConfig
     {
