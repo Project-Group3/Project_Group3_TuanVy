@@ -22,7 +22,8 @@ CREATE TABLE [dbo].[Products] (
     [ProductID]   INT          IDENTITY (1, 1) NOT NULL,
     [CategoryID]  INT          NOT NULL,
     [ProductName] VARCHAR (50) NOT NULL,
-    PRIMARY KEY CLUSTERED ([ProductID] ASC)
+    PRIMARY KEY CLUSTERED ([ProductID] ASC),
+    FOREIGN KEY ([CategoryID]) REFERENCES [dbo].[Categories] ([CategoryID])
 );
 
 GO
@@ -34,5 +35,6 @@ CREATE TABLE [dbo].[OrderDetails] (
     [Rate]           NUMERIC (12, 2) NOT NULL,
     [Quantity]       INT             NOT NULL,
     PRIMARY KEY CLUSTERED ([OrderDetailsID] ASC),
-    CONSTRAINT [FK_OrderDetails_OrderMaster] FOREIGN KEY ([OrderID]) REFERENCES [dbo].[OrderMaster] ([OrderID])
+    FOREIGN KEY ([OrderID]) REFERENCES [dbo].[OrderMaster] ([OrderID]),
+    FOREIGN KEY ([ProductID]) REFERENCES [dbo].[Products] ([ProductID])
 );
