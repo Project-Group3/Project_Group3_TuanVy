@@ -4,17 +4,7 @@ CREATE TABLE [dbo].[Categories](
     PRIMARY KEY CLUSTERED ([CategoryID] ASC)
 );
 
-GO
 
-CREATE TABLE [dbo].[OrderDetails] (
-    [OrderDetailsID] INT             IDENTITY (1, 1) NOT NULL,
-    [OrderID]        INT             NOT NULL,
-    [ProductID]      INT             NOT NULL,
-    [Rate]           NUMERIC (12, 2) NOT NULL,
-    [Quantity]       INT             NOT NULL,
-    PRIMARY KEY CLUSTERED ([OrderDetailsID] ASC),
-    CONSTRAINT [FK_OrderDetails_OrderMaster] FOREIGN KEY ([OrderID]) REFERENCES [dbo].[OrderMaster] ([OrderID])
-);
 
 GO
 
@@ -35,3 +25,14 @@ CREATE TABLE [dbo].[Products] (
     PRIMARY KEY CLUSTERED ([ProductID] ASC)
 );
 
+GO
+
+CREATE TABLE [dbo].[OrderDetails] (
+    [OrderDetailsID] INT             IDENTITY (1, 1) NOT NULL,
+    [OrderID]        INT             NOT NULL,
+    [ProductID]      INT             NOT NULL,
+    [Rate]           NUMERIC (12, 2) NOT NULL,
+    [Quantity]       INT             NOT NULL,
+    PRIMARY KEY CLUSTERED ([OrderDetailsID] ASC),
+    CONSTRAINT [FK_OrderDetails_OrderMaster] FOREIGN KEY ([OrderID]) REFERENCES [dbo].[OrderMaster] ([OrderID])
+);
