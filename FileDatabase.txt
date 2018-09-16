@@ -1,0 +1,37 @@
+CREATE TABLE [dbo].[Categories](
+	[CategoryID] INT IDENTITY(1,1) NOT NULL,
+	[CategoryName] varchar(50) not null,
+    PRIMARY KEY CLUSTERED ([CategoryID] ASC)
+);
+
+GO
+
+CREATE TABLE [dbo].[OrderDetails] (
+    [OrderDetailsID] INT             IDENTITY (1, 1) NOT NULL,
+    [OrderID]        INT             NOT NULL,
+    [ProductID]      INT             NOT NULL,
+    [Rate]           NUMERIC (12, 2) NOT NULL,
+    [Quantity]       INT             NOT NULL,
+    PRIMARY KEY CLUSTERED ([OrderDetailsID] ASC),
+    CONSTRAINT [FK_OrderDetails_OrderMaster] FOREIGN KEY ([OrderID]) REFERENCES [dbo].[OrderMaster] ([OrderID])
+);
+
+GO
+
+CREATE TABLE [dbo].[OrderMaster] (
+    [OrderID]     INT           IDENTITY (1, 1) NOT NULL,
+    [OrderNo]     VARCHAR (50)  NOT NULL,
+    [OrderDate]   DATETIME      NOT NULL,
+    [Description] VARCHAR (300) NULL,
+    PRIMARY KEY CLUSTERED ([OrderID] ASC)
+);
+
+GO
+
+CREATE TABLE [dbo].[Products] (
+    [ProductID]   INT          IDENTITY (1, 1) NOT NULL,
+    [CategoryID]  INT          NOT NULL,
+    [ProductName] VARCHAR (50) NOT NULL,
+    PRIMARY KEY CLUSTERED ([ProductID] ASC)
+);
+
