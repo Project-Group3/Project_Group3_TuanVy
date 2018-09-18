@@ -10,6 +10,7 @@ using Project.Models;
 
 namespace Project.Controllers
 {
+    [Authorize]
     public class Orders1Controller : Controller
     {
         private MyDatabaseEntities db = new MyDatabaseEntities();
@@ -20,6 +21,7 @@ namespace Project.Controllers
             var orders = db.Orders.Include(o => o.Customer);
             return View(orders.ToList());
         }
+
 
         // GET: Orders1/Details/5
         public ActionResult Details(Guid? id)
@@ -129,5 +131,6 @@ namespace Project.Controllers
             }
             base.Dispose(disposing);
         }
+
     }
 }

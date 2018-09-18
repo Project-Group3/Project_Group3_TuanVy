@@ -118,3 +118,4 @@ D:\GitHud\Project-Group3\Project_Group3_TuanVyQuang\Project\Project\obj\Debug\Pr
 D:\GitHud\Project-Group3\Project_Group3_TuanVyQuang\Project\Project\obj\Debug\Project.csproj.CopyComplete
 D:\GitHud\Project-Group3\Project_Group3_TuanVyQuang\Project\Project\obj\Debug\Project.dll
 D:\GitHud\Project-Group3\Project_Group3_TuanVyQuang\Project\Project\obj\Debug\Project.pdb
+D:\GitHud\Project-Group3\Project_Group3_TuanVyQuang\Project\Project\bin\Rotativa.dll

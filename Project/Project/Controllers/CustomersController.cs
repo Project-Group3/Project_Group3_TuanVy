@@ -10,6 +10,7 @@ using Project.Models;
 
 namespace Project.Controllers
 {
+    [Authorize]
     public class CustomersController : Controller
     {
         private MyDatabaseEntities db = new MyDatabaseEntities();
