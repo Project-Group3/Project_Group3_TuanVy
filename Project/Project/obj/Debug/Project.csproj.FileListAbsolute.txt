@@ -118,6 +118,7 @@ D:\GitHud\Project-Group3\Project_Group3_TuanVyQuang\Project\Project\obj\Debug\Pr
 D:\GitHud\Project-Group3\Project_Group3_TuanVyQuang\Project\Project\obj\Debug\Project.csproj.CopyComplete
 D:\GitHud\Project-Group3\Project_Group3_TuanVyQuang\Project\Project\obj\Debug\Project.dll
 D:\GitHud\Project-Group3\Project_Group3_TuanVyQuang\Project\Project\obj\Debug\Project.pdb
+<<<<<<< HEAD
 E:\prj-semester-3\prj\Project\Project\bin\ApplicationInsights.config
 E:\prj-semester-3\prj\Project\Project\bin\Project.dll.config
 E:\prj-semester-3\prj\Project\Project\bin\Project.dll
@@ -358,3 +359,6 @@ E:\prj-semester-3.4\Project\Project\obj\Debug\Project.csproj.CoreCompileInputs.c
 E:\prj-semester-3.4\Project\Project\obj\Debug\Project.csproj.CopyComplete
 E:\prj-semester-3.4\Project\Project\obj\Debug\Project.dll
 E:\prj-semester-3.4\Project\Project\obj\Debug\Project.pdb
+=======
+D:\GitHud\Project-Group3\Project_Group3_TuanVyQuang\Project\Project\bin\Rotativa.dll
+>>>>>>> pqvy

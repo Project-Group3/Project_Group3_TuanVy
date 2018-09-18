@@ -1,4 +1,5 @@
 ﻿using Project.Models;
+using Rotativa;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -7,15 +8,18 @@ using System.Web.Mvc;
 
 namespace Project.Controllers
 {
+    
     public class OrdersController : Controller
     {
         MyDatabaseEntities db = new MyDatabaseEntities();
         
+        [Authorize]
         public ActionResult Index()
         {
             List<Customer> OrderAndCustomerList = db.Customers.ToList();
             return View(OrderAndCustomerList);
         }
+<<<<<<< HEAD
         public ActionResult SaveOrder(string name, String address, Order[] order)
         {
             string result = "Error! Order Is Not Complete!";
@@ -45,6 +49,20 @@ namespace Project.Controllers
                 result = "Success! Order Is Complete!";
             }
             return Json(result, JsonRequestBehavior.AllowGet);
+=======
+
+
+        public ActionResult GetInfPrint()
+        {
+            List<Customer> OrderAndCustomerList = db.Customers.ToList();
+            return View(OrderAndCustomerList);
+        }
+
+
+        public ActionResult PrintAll()
+        {
+            return new ActionAsPdf("GetInfPrint");
+>>>>>>> pqvy
         }
     }
 }
