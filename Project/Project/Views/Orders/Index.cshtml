@@ -1,5 +1,4 @@
 ﻿
-
 <div class="modal fade" id="newOrderModal">
     <div class="modal-dialog modal-lg" style=" width: 900px !important;">
         <div class="modal-content">
@@ -88,11 +87,11 @@
 
 @section scripts{
     <script>
-        //Show Modal.
+        
         function addNewOrder() {
             $("#newOrderModal").modal();
         }
-        //Add Multiple Order.
+        
         $("#addToList").click(function (e) {
             e.preventDefault();
 
@@ -107,13 +106,13 @@
             detailsTableBody.append(productItem);
             clearItem();
         });
-        //After Add A New Order In The List, Clear Clean The Form For Add More Order.
+        
         function clearItem() {
             $("#productName").val('');
             $("#price").val('');
             $("#quantity").val('');
         }
-        // After Add A New Order In The List, If You Want, You Can Remove It.
+        
         $(document).on('click', 'a.deleteItem', function (e) {
             e.preventDefault();
             var $self = $(this);
@@ -123,7 +122,7 @@
                 });
             }
         });
-        //After Click Save Button Pass All Data View To Controller For Save Database
+        
         function saveOrder(data) {
             return $.ajax({
                 contentType: 'application/json; charset=utf-8',
@@ -140,7 +139,7 @@
                 }
             });
         }
-        //Collect Multiple Order List For Pass To Controller
+        
         $("#saveOrder").click(function (e) {
             e.preventDefault();
 
