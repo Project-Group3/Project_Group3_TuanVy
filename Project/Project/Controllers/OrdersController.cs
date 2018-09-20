@@ -19,6 +19,7 @@ namespace Project.Controllers
             List<Customer> OrderAndCustomerList = db.Customers.ToList();
             return View(OrderAndCustomerList);
         }
+<<<<<<< HEAD
 
         public ActionResult SaveOrder(string name, String address, Order[] order)
         {
@@ -52,6 +53,9 @@ namespace Project.Controllers
         }
 
 
+=======
+        
+>>>>>>> bfcbb1b26a28e0af8a5d95f19234c6bc7c4b8072
         public ActionResult GetInfPrint()
         {
             List<Customer> OrderAndCustomerList = db.Customers.ToList();
@@ -62,7 +66,10 @@ namespace Project.Controllers
         public ActionResult PrintAll()
         {
             return new ActionAsPdf("GetInfPrint");
+<<<<<<< HEAD
 
+=======
+>>>>>>> bfcbb1b26a28e0af8a5d95f19234c6bc7c4b8072
         }
     }
 }
