@@ -14,23 +14,16 @@ namespace Project.Controllers
         MyDatabaseEntities db = new MyDatabaseEntities();
         
         [Authorize]
-        public ActionResult Index()
+        public ActionResult Index(string searchString)
         {
-            List<Customer> OrderAndCustomerList = db.Customers.ToList();
+            var OrderAndCustomerList = from m in db.Customers select m;
+            if (!String.IsNullOrEmpty(searchString))
+            {
+                OrderAndCustomerList = OrderAndCustomerList.Where(s => s.Name.Contains(searchString));
+            }
+
             return View(OrderAndCustomerList);
         }
 
-
-        public ActionResult GetInfPrint()
-        {
-            List<Customer> OrderAndCustomerList = db.Customers.ToList();
-            return View(OrderAndCustomerList);
-        }
-
-
-        public ActionResult PrintAll()
-        {
-            return new ActionAsPdf("GetInfPrint");
-        }
     }
 }
