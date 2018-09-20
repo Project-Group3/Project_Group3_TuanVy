@@ -7,11 +7,12 @@ using System.Web.Mvc;
 
 namespace Project2.Controllers
 {
-    public class OrderController : Controller
-    {
+    [Authorize]
+       public class OrderController : Controller
+        {
         MyDatabaseEntities db = new MyDatabaseEntities();
-        // GET: Order
-		public ActionResult Index(string searchString)
+        
+	public ActionResult Index(string searchString)
         {
             var OrderAndCustomerList = from m in db.Customers select m;
             if (!String.IsNullOrEmpty(searchString))
