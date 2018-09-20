@@ -4,6 +4,15 @@
 @model IEnumerable<Project.Models.Customer>
 >>>>>>> bfcbb1b26a28e0af8a5d95f19234c6bc7c4b8072
 <br /><br />
+      <label>
+          @using (Html.BeginForm())
+          {
+              <p>
+                  Filter Customer: @Html.TextBox("SearchString")
+                  <input type="submit" value="Search" />
+              </p>
+          }
+      </label>
 <div class="panel panel-default">
     <div class="panel-heading">
         <div class="row">

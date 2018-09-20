@@ -14,7 +14,7 @@ namespace Project.Controllers
         MyDatabaseEntities db = new MyDatabaseEntities();
         
         [Authorize]
-        public ActionResult Index()
+        public ActionResult Index(string searchString)
         {
             List<Customer> OrderAndCustomerList = db.Customers.ToList();
             return View(OrderAndCustomerList);
@@ -59,9 +59,15 @@ namespace Project.Controllers
         public ActionResult GetInfPrint()
         {
             List<Customer> OrderAndCustomerList = db.Customers.ToList();
+            var OrderAndCustomerList = from m in db.Customers select m;
+            if (!String.IsNullOrEmpty(searchString))
+            {
+                OrderAndCustomerList = OrderAndCustomerList.Where(s => s.Name.Contains(searchString));
+            }
             return View(OrderAndCustomerList);
         }
 
+<<<<<<< HEAD
 
         public ActionResult PrintAll()
         {
@@ -71,5 +77,7 @@ namespace Project.Controllers
 =======
 >>>>>>> bfcbb1b26a28e0af8a5d95f19234c6bc7c4b8072
         }
+=======
+>>>>>>> 1c911d84645c2d98e0689750a3cc1738b8db6e23
     }
 }
