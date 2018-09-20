@@ -1,6 +1,5 @@
-﻿@model IEnumerable<Project.Models.Customer>
+@model IEnumerable<Project.Models.Customer>
 <br /><br />
-<<<<<<< HEAD
       <label>
           @using (Html.BeginForm())
           {
@@ -10,17 +9,14 @@
               </p>
           }
       </label>
-=======
->>>>>>> dmtuan
+      
 <div class="panel panel-default">
     <div class="panel-heading">
         <div class="row">
             <h2 class="panel-title pull-left" style="margin-left:10px;">
-<<<<<<< HEAD
                 <strong>Master Order Details</strong>
             </h2>
             <button style="margin-right:10px" class="btn btn-primary pull-right" onclick="addNewOrder()">New Order</button>
-=======
                 <strong>Order Details</strong>
             </h2>
             <button style="margin-right:10px" class="btn btn-primary pull-right" onclick="addNewOrder()">New Order</button>
@@ -79,7 +75,6 @@
         <div class="panel-body">
             <h3 style="color:red;">Empty!</h3>
         </div>
-
     }
 </div>
 
@@ -164,29 +159,19 @@
                     <button id="saveOrder" type="submit" class="btn btn-danger">Save Order</button>
                 </div>
             </form>
->>>>>>> dmtuan
         </div>
     </div>
-
-<<<<<<< HEAD
-=======
 @section scripts{
 
     <script>
         //Show Modal.
         function addNewOrder() {
             $("#newOrderModal").modal();
-
-
         }
 
         //Add Multiple Order.
         $("#addToList").click(function (e) {
             e.preventDefault();
->>>>>>> dmtuan
-
-
-<<<<<<< HEAD
 @if (Model.Count() != 0)
     {
         foreach (var item in Model)
@@ -237,7 +222,6 @@
         <div class="panel-body">
             <h3 style="color:red;">Empty!</h3>
         </div>
-=======
             var productName = $("#productName").val(),
                 price = $("#price").val(),
                 quantity = $("#quantity").val(),
@@ -296,14 +280,11 @@
                 });
             });
 
-
             var data = JSON.stringify({
                 name: $("#name").val(),
                 address: $("#address").val(),
                 order: orderArr
             });
->>>>>>> dmtuan
-
     }
 </div>
 
