@@ -1,5 +1,14 @@
-﻿@model IEnumerable<Project.Models.Customer>
+@model IEnumerable<Project.Models.Customer>
 <br /><br />
+      <label>
+          @using (Html.BeginForm())
+          {
+              <p>
+                  Filter Customer: @Html.TextBox("SearchString")
+                  <input type="submit" value="Search" />
+              </p>
+          }
+      </label>
 <div class="panel panel-default">
     <div class="panel-heading">
         <div class="row">
@@ -23,9 +32,10 @@
                             <td>Customer Name : @item.Name </td>
                             <td>Address : @item.Address </td>
                             <td>Order Date : @item.OrderDate</td>
+                            <td>Phone: @item.Phone</td>
                         </tr>
                         <tr>
-                            <td colspan="3">
+                            <td colspan="4">
                                 <table class="table table-bordered">
                                     <tbody>
                                         <tr>
