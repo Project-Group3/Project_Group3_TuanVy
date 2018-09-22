@@ -96,14 +96,17 @@
                             <label class="control-label col-md-2">
                                 Customer Name
                             </label>
-                            <div class="col-md-4">
+                            <div class="col-md-2">
                                 <input type="text" id="name" name="name" placeholder="Customer Name" class="form-control" />
                             </div>
                             <label class="control-label col-md-2">
                                 Address
                             </label>
-                            <div class="col-md-4">
+                            <div class="col-md-2">
                                 <input type="text" id="address" name="address" placeholder="Customer Address" class="form-control" />
+                            </div>
+                            <div class="col-md-2">
+                                <input type="text" id="phone" name="phone" placeholder="Customer phone" class="form-control" />
                             </div>
                         </div>
                     </div>
@@ -237,6 +240,7 @@
             var data = JSON.stringify({
                 name: $("#name").val(),
                 address: $("#address").val(),
+                phone: $("#phone").val(),
                 order: orderArr
             });
 
