@@ -118,3 +118,7 @@ D:\GitHud\Project-Group3\Project_Group3_TuanVyQuang\Project\Project\obj\Debug\Pr
 D:\GitHud\Project-Group3\Project_Group3_TuanVyQuang\Project\Project\obj\Debug\Project.csproj.CopyComplete
 D:\GitHud\Project-Group3\Project_Group3_TuanVyQuang\Project\Project\obj\Debug\Project.dll
 D:\GitHud\Project-Group3\Project_Group3_TuanVyQuang\Project\Project\obj\Debug\Project.pdb
+E:\project-sem3\Project_Group3_TuanVy\Project\Project\obj\Debug\Project.csprojAssemblyReference.cache
+E:\project-sem3\Project_Group3_TuanVy\Project\Project\obj\Debug\Project.csproj.CoreCompileInputs.cache
+E:\project-sem3\Project_Group3_TuanVy\Project\Project\obj\Debug\Project.dll
+E:\project-sem3\Project_Group3_TuanVy\Project\Project\obj\Debug\Project.pdb
