@@ -1,4 +1,4 @@
-﻿using Project.Models;
+using Project.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -7,9 +7,11 @@ using System.Web.Mvc;
 
 namespace Project.Controllers
 {
-    [Authorize]
-   MyDatabaseEntities db = new MyDatabaseEntities();
-        private int customerId;
+    
+    public class OrdersController : Controller
+    {
+        MyDatabaseEntities db = new MyDatabaseEntities();
+        private int cutomerId;
         private int orderId;
 
         // GET: Order
@@ -32,7 +34,7 @@ namespace Project.Controllers
             {
                 //var cutomerId = Guid.NewGuid();
                 Customer model = new Customer();
-                model.CustomerId = customerId;
+                model.CustomerId = cutomerId;
                 model.Name = name;
                 model.Address = address;
                 model.OrderDate = DateTime.Now;
@@ -47,7 +49,7 @@ namespace Project.Controllers
                     O.Quantity = item.Quantity;
                     O.Price = item.Price;
                     O.Amount = item.Amount;
-                    O.CustomerId = customerId;
+                    O.CustomerId = cutomerId;
                     db.Orders.Add(O);
                 }
                 db.SaveChanges();
